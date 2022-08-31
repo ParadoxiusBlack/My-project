@@ -1,3 +1,5 @@
 This is a test of git. I will next commit this to git. 
 
 There are some funky things that it can do. We'll see if this works.
+
+Boom Boom Boom
