@@ -1,15 +1,17 @@
 using System;
 
-namespace MyApplication
+namespace ThisIsMe
 {
-  class Program
+  public class Program
   {
-    static void Main(string[] args)
+    static public void Main(string[] args)
     {
-      string name = "Anthony";
-      Console.WriteLine(name); 
-      int number = 11;
-      Console.WriteLine(number);
+      string name = "Connor";
+      Console.WriteLine("Name: " + name); 
+      int number = 18;
+      Console.WriteLine("Age: " + number);
+	  bool happy = true;
+	  Console.WriteLine("Happy? " + happy);
      }
   }
 }
