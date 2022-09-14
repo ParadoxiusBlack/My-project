@@ -1,38 +1,44 @@
 using System;
-					
+
 public class Program
 {
-	public GameStates gameStates;
+	
+	public Acolyte acolyte;
 	
 	public void Main()
 	{
-		gameStates = new GameStates();
-		gameStates.currentState = GameStates.States.Ending;
-		gameStates.CheckState();
+		acolyte = new Acolyte();
+		acolyte.currentSect = Acolyte.Sects.Priest;
+		acolyte.CheckSect();
 	}
 }
 
-public class GameStates {
+public class Acolyte {
 	
-	public enum States {
-		Starting,
-		Playing,
-		Ending
+	public enum Sects {
+		Deacon,
+		Priest,
+		Bishop,
+		Prophet
 	}
 	
-	public States currentState = States.Starting;
+	public Sects currentSect = Sects.Deacon;
 	
-	public void CheckState () {
-		switch (currentState) {
-			case States.Starting:
-				Console.WriteLine("Starting");
+	public void CheckSect () {
+		switch(currentSect) {
+			case Sects.Deacon:
+				Console.WriteLine("You are a Deacon");
 				break;
-			case States.Playing:
-				Console.WriteLine("Playing");
+			case Sects.Priest:
+				Console.WriteLine("You are a Priest");
 				break;
-			case States.Ending:
-				Console.WriteLine("Ending");
+			case Sects.Bishop:
+				Console.WriteLine("You are a Bishop");
+				break;
+			case Sects.Prophet:
+				Console.WriteLine("You are a Prophet");
 				break;
 		}
+					
 	}
 }
