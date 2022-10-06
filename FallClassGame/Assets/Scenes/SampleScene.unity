@@ -154,8 +154,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0003949, y: 1, z: 1}
+  m_Center: {x: -0.00019985199, y: 0, z: 0}
 --- !u!23 &371389037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 8.86, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -438,7 +438,6 @@ GameObject:
   - component: {fileID: 1249139072}
   - component: {fileID: 1249139071}
   - component: {fileID: 1249139075}
-  - component: {fileID: 1249139076}
   m_Layer: 0
   m_Name: The Floor
   m_TagString: Untagged
@@ -537,19 +536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5042997f9cdb398468276b516ea0f032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1249139076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249139070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7088543ab47ef24db2ffb82a3e2d211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alpha: 6
 --- !u!1 &1373800207
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,8 +553,10 @@ GameObject:
   - component: {fileID: 1373800215}
   - component: {fileID: 1373800216}
   - component: {fileID: 1373800217}
-  - component: {fileID: 1373800218}
-  - component: {fileID: 1373800219}
+  - component: {fileID: 1373800220}
+  - component: {fileID: 1373800221}
+  - component: {fileID: 1373800222}
+  - component: {fileID: 1373800223}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -719,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myName: Connor
---- !u!114 &1373800218
+--- !u!114 &1373800220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -728,12 +716,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373800207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca6231d2e6fcd64394052b1f713f65f, type: 3}
+  m_Script: {fileID: 11500000, guid: ab4ebbe133610f24182aed27fd17d8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  turnSpeed: 50
---- !u!114 &1373800219
+--- !u!114 &1373800221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -742,10 +728,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373800207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97709a83328c3d744a0ba764c09f100b, type: 3}
+  m_Script: {fileID: 11500000, guid: e27a211d1a6dbe84294175cbf33d06b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  other: {fileID: 1970383020}
+  speed: 5
+  turnSpeed: 100
+--- !u!114 &1373800222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373800207}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f39f4802c4a9a4785686fcadf23117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  turnSpeed: 100
+  bulletPrefab: {fileID: 1373800215}
+  firePosition: {fileID: 1373800213}
+  bulletSpeed: 100
+--- !u!114 &1373800223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373800207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2e7443b16e59a4d9ea30604d93ba14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1373800215}
+  firePosition: {fileID: 963194228}
+  bulletSpeed: 100
 --- !u!1 &1398444931
 GameObject:
   m_ObjectHideFlags: 0
