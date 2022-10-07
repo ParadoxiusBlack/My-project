@@ -421,10 +421,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f125121ed41108a45afb635e1b81c710, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b991503758d6d54a9b52c9c1554c625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1373800213}
+  offset: {x: 1, y: 1, z: -5}
+  smoothSpeed: 0.125
 --- !u!1 &1249139070
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +439,6 @@ GameObject:
   - component: {fileID: 1249139073}
   - component: {fileID: 1249139072}
   - component: {fileID: 1249139071}
-  - component: {fileID: 1249139075}
   m_Layer: 0
   m_Name: The Floor
   m_TagString: Untagged
@@ -524,18 +525,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1249139075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249139070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5042997f9cdb398468276b516ea0f032, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1373800207
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,14 +538,10 @@ GameObject:
   - component: {fileID: 1373800211}
   - component: {fileID: 1373800210}
   - component: {fileID: 1373800209}
-  - component: {fileID: 1373800214}
   - component: {fileID: 1373800215}
-  - component: {fileID: 1373800216}
-  - component: {fileID: 1373800217}
   - component: {fileID: 1373800220}
   - component: {fileID: 1373800221}
-  - component: {fileID: 1373800222}
-  - component: {fileID: 1373800223}
+  - component: {fileID: 1373800224}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -654,18 +639,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1373800214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373800207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5366b9ebd77b31b459dacb83aa7d755a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1373800215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -682,31 +655,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1373800216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373800207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a1bca678d9739a45886addbfe77231d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1373800217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373800207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e08d59a45cdf6ab4ba37d76e661951cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myName: Connor
 --- !u!114 &1373800220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,24 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   turnSpeed: 100
---- !u!114 &1373800222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373800207}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f39f4802c4a9a4785686fcadf23117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  turnSpeed: 100
-  bulletPrefab: {fileID: 1373800215}
-  firePosition: {fileID: 1373800213}
-  bulletSpeed: 100
---- !u!114 &1373800223
+--- !u!114 &1373800224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -759,12 +690,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373800207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2e7443b16e59a4d9ea30604d93ba14, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bd43eff35c46db4d90d2cc123203f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1373800215}
-  firePosition: {fileID: 963194228}
-  bulletSpeed: 100
+  jumpforce: 1000
 --- !u!1 &1398444931
 GameObject:
   m_ObjectHideFlags: 0
