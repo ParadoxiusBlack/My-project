@@ -9,11 +9,11 @@ public class MySO : ScriptableObject
 {
    public new string enemyName;
 
-   public int money;
-   public int attack;
-   public int health;
-   public int speed;
-   public int range;
+   public float money;
+   public float attack;
+   public float health;
+   public float speed;
+   public float range;
 
    public void Print ()
    {
