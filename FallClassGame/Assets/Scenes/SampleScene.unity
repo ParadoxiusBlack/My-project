@@ -560,6 +560,8 @@ GameObject:
   - component: {fileID: 371389037}
   - component: {fileID: 371389036}
   - component: {fileID: 371389040}
+  - component: {fileID: 371389041}
+  - component: {fileID: 371389042}
   m_Layer: 0
   m_Name: Environmental Cube
   m_TagString: Untagged
@@ -655,6 +657,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d585502325695ab46bee57c98e0db2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &371389041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371389035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef08887b4ca8604e8b5d165f55cbcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &371389042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371389035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c3d09e4fe306748a838642274b8434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &478516275
@@ -6056,8 +6082,10 @@ GameObject:
   - component: {fileID: 1373800215}
   - component: {fileID: 1373800220}
   - component: {fileID: 1373800221}
+  - component: {fileID: 1373800228}
   - component: {fileID: 1373800224}
   - component: {fileID: 1373800225}
+  - component: {fileID: 1373800227}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6243,6 +6271,31 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1373800227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373800207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b31f9ba9187e91408f03e350d597766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 0}
+--- !u!114 &1373800228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373800207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c3d09e4fe306748a838642274b8434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1398444931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6701,6 +6754,8 @@ GameObject:
   - component: {fileID: 1847656336}
   - component: {fileID: 1847656335}
   - component: {fileID: 1847656334}
+  - component: {fileID: 1847656340}
+  - component: {fileID: 1847656341}
   m_Layer: 0
   m_Name: Expirimentation cube
   m_TagString: Untagged
@@ -6815,6 +6870,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847656340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847656333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef08887b4ca8604e8b5d165f55cbcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1847656341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847656333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c3d09e4fe306748a838642274b8434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1970383020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6827,6 +6906,8 @@ GameObject:
   - component: {fileID: 1970383023}
   - component: {fileID: 1970383022}
   - component: {fileID: 1970383021}
+  - component: {fileID: 1970383025}
+  - component: {fileID: 1970383026}
   m_Layer: 0
   m_Name: Environmental Cube (1)
   m_TagString: Untagged
@@ -6912,6 +6993,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1970383025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970383020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef08887b4ca8604e8b5d165f55cbcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1970383026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970383020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c3d09e4fe306748a838642274b8434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2018103647
 GameObject:
   m_ObjectHideFlags: 0
