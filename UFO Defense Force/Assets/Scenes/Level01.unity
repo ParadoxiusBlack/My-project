@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 1573565315}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blaster: {fileID: 2107734334}
-  laserBolt: {fileID: 2813785569929741219, guid: b9b132a0bf3d3444e9b09b141850974a, type: 3}
+  laserBolt: {fileID: 3960514852257206246, guid: 3aff32df51370154c97043e8f8244311, type: 3}
   interval: 3
 --- !u!4 &1828349947
 Transform:
