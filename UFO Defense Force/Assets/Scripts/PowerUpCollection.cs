@@ -9,6 +9,6 @@ public class PowerUpCollection : MonoBehaviour
     {
         power = power + 1;
         print("Power Up Collected" );
-        print("Your power is now" + power);
+        print("Your power is now " + power);
     }
 }

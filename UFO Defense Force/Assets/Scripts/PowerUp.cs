@@ -8,13 +8,14 @@ public class PowerUp : MonoBehaviour
     public float multiplier = 1.4f;
     public float duration = 4f;
 
-    void OnTriggerEnter (Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             Pickup(other);
         }
     }
+    
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Power up obtained");
