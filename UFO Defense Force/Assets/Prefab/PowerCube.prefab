@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 3960514852257206241}
   - component: {fileID: 3960514852257206253}
   - component: {fileID: 7535212812301065458}
-  - component: {fileID: 2054017693029541501}
   - component: {fileID: 4228401641580032073}
+  - component: {fileID: 8807576146943863893}
+  - component: {fileID: -3110918179313859683}
   m_Layer: 0
   m_Name: PowerCube
   m_TagString: Power
@@ -113,9 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2cb8215014b0d448c8586238ca8f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupEffect: {fileID: 0}
-  multiplier: 10
-  duration: 4
+  multiplier: 2
+  duration: 5
 --- !u!114 &7535212812301065458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,20 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topBounds: 100
-  lowerBounds: -20
---- !u!114 &2054017693029541501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3960514852257206246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a7e5c32c63f4cf4f8e57f749f61223c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
+  lowerBounds: -500
 --- !u!54 &4228401641580032073
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,3 +146,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8807576146943863893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960514852257206246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27036419d49c21e42a4fc2818f6debc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -10
+--- !u!114 &-3110918179313859683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960514852257206246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35bd837b8f5423645a357259b7cea6e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b479fc1ec682d464194d1f5f0bdd8684, type: 2}
+        m_TargetAssemblyTypeName: DataValues, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
