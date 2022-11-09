@@ -225,6 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54acf554b2e7b548a317a373cd4ac3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 3143617873166787509, guid: 5204992a97fde3c4aa13a02fa5b028bb, type: 3}
+  gameOver: 1
   topBounds: 50
   lowerBounds: -20
   ceilingFloor: 5
@@ -256,6 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f481cc96d1001f9488e88fcd7e00d052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 1
 --- !u!1 &4285640978369818391
 GameObject:
   m_ObjectHideFlags: 0
