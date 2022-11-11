@@ -24,6 +24,7 @@ public class PowerUp : MonoBehaviour
         PlayerController stats = player.GetComponent<PlayerController>();
         stats.speed *= multiplier;
 
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.PowerUP);
         //makes powerup invisible and removes collider to be able to undo effect after duration
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
