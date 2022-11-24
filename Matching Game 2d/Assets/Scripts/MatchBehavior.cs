@@ -5,7 +5,7 @@ using System.Collections;
 public class MatchBehavior : IDContainerBehavior
 {
     
-    public UnityEvent matchEvent,   noMatchEvent, noMatchDelayedEvent;
+    public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
     private IEnumerator OnTriggerEnter(Collider other)
     {
