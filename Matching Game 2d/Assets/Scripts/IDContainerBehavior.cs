@@ -9,5 +9,6 @@ public class IDContainerBehavior : MonoBehaviour
     public void Start()
     {
         startEvent.Invoke();
+        Debug.Log("IDContainerBehavior " + idObj);
     }
 }
