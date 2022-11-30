@@ -17,7 +17,12 @@ public class Coroutinebehaviour : MonoBehaviour
         wffuObj = new WaitForFixedUpdate();
         startEvent.Invoke();
     }
-
+    
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
 
     public void StartCounting()
     {
@@ -49,4 +54,5 @@ public class Coroutinebehaviour : MonoBehaviour
             repeatUntilFalseEvent.Invoke();
         }
     }
+
 }
