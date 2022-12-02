@@ -6,6 +6,7 @@ public class MatchBehavior : IDContainerBehavior
 {
     
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
+    public float waitTime = 0.5f;
 
     private IEnumerator OnTriggerEnter(Collider other)
     {
@@ -21,7 +22,7 @@ public class MatchBehavior : IDContainerBehavior
         else
         {
             noMatchEvent.Invoke();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(waitTime);
             noMatchDelayedEvent.Invoke();
         }
     }
